@@ -1,0 +1,24 @@
+/* Mobile Portrait: Smallest screens */
+@media (max-width: 480px) {
+  
+}
+
+/* Mobile Landscape: Wider phones */
+@media (min-width: 481px) and (max-width: 767px) {
+  
+}
+
+/* Tablet Portrait: Medium screens */
+@media (min-width: 768px) and (max-width: 991px) {
+  
+}
+
+/* Small Desktop: Entry-level laptops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  
+}
+
+/* Large Desktop: Wide screens */
+@media (min-width: 1200px) {
+  
+}
