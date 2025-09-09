@@ -1,24 +1,91 @@
 /* Mobile Portrait: Smallest screens */
 @media (max-width: 480px) {
-  
+	.navigation_bar .options {
+		display: none;
+	}
+	.navigation_bar {
+		justify-content: space-between;
+	}
+	.navigation_bar .bi-list {
+		display: block !important;
+		visibility: visible !important;
+		font-size: 2.5rem !important;
+		width: 48px;
+		height: 48px;
+		display: flex !important;
+		align-items: center;
+		justify-content: center;
+		padding: 0;
+		margin-left: 12px;
+		margin-right: 8px;
+		cursor: pointer;
+		background: transparent;
+		border-radius: 8px;
+		box-sizing: border-box;
+	}
 }
 
 /* Mobile Landscape: Wider phones */
 @media (min-width: 481px) and (max-width: 767px) {
+	.navigation_bar .options {
+		display: none;
+	}
+	.navigation_bar {
+		justify-content: space-between;
+	}
+	.navigation_bar .bi-list {
+		display: block;
+	}
   
 }
 
 /* Tablet Portrait: Medium screens */
 @media (min-width: 768px) and (max-width: 991px) {
+	.navigation_bar {
+		padding: 0 16px;
+	}
+	.navigation_bar .options ul {
+		gap: 18px;
+	}
+	.navigation_bar .options {
+		display: none;
+	}
+	.navigation_bar .bi-list {
+		display: block;
+	}
   
 }
 
 /* Small Desktop: Entry-level laptops */
 @media (min-width: 992px) and (max-width: 1199px) {
+	.navigation_bar {
+		padding: 0 16px;
+	}
+	.navigation_bar .options ul {
+		gap: 18px;
+	}
+	.navigation_bar .options {
+		display: block;
+	}
+	.navigation_bar .bi-list {
+		display: none;
+	}
   
 }
 
 /* Large Desktop: Wide screens */
 @media (min-width: 1200px) {
+	.navigation_bar {
+		padding: 0 32px;
+	}
+	.navigation_bar .options ul {
+		gap: 32px;
+	}
+	.navigation_bar .options {
+		display: block;
+	}
+	.navigation_bar .bi-list {
+		display: none;
+	}
   
 }
