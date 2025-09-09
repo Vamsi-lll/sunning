@@ -1,3 +1,5 @@
+
+
 /* imports */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css');
@@ -30,8 +32,95 @@
 *{
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
 }
 
+html, body {
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
 body{
     font-family: var(--myfont);
+}
+
+/*  ====================================================================================*/
+/*                                           home                                       */
+/*  ====================================================================================*/
+
+/* Navigation Bar Styles */
+.navigation_bar {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    padding: 0 32px;
+}
+
+.navigation_bar .logo {
+    flex: 0 0 auto;
+    margin-right: 40px;
+}
+.navigation_bar .logo img {
+    width: 300px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.navigation_bar .options {
+    flex: 1 1 auto;
+}
+
+.navigation_bar .options ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 32px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation_bar .options ul li {
+    font-size: 15px;
+    font-weight: 600;
+    font-variation-settings: "wght" 600;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.navigation_bar .options ul button {
+    margin-left: 24px;
+    width: 237px;
+    height: 43px;
+    background: #FF8036;
+    color: #fff;
+    border: none;
+    border-radius: 28.5px;
+    font-family: var(--myfont);
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.navigation_bar .options ul button:hover {
+    background: #ff9800;
+}
+
+.navigation_bar .bi-list {
+    display: none;
+    font-size: 2rem;
+    margin-left: 24px;
+    cursor: pointer;
+    color: var(--orange);
+    font-weight: 700;
 }
